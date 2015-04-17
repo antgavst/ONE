@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage-800-667h.png" translatesAutoresizingMaskIntoConstraints="NO" id="COu-pU-lxC">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C8Z-qC-8dp"/>
+                <constraint firstAttribute="trailing" secondItem="COu-pU-lxC" secondAttribute="trailing" id="FlR-Tz-PVT"/>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" id="IN3-tS-rGm"/>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="176" id="INH-5h-yCb"/>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="62" id="JnR-GJ-lhY"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="COu-pU-lxC" secondAttribute="trailing" id="YdV-mN-Zmh"/>
+                <constraint firstAttribute="bottom" secondItem="COu-pU-lxC" secondAttribute="bottom" constant="176" id="gHF-mL-bMo"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="COu-pU-lxC" secondAttribute="bottom" id="m96-hY-IvH"/>
+                <constraint firstAttribute="trailing" secondItem="COu-pU-lxC" secondAttribute="trailing" constant="130" id="mjY-nt-8hB"/>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="mzr-0U-NRL"/>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" id="n5A-WU-w2k"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="COu-pU-lxC" secondAttribute="trailing" id="oAv-6J-Rgn"/>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" id="qLC-ci-hfd"/>
+                <constraint firstItem="COu-pU-lxC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sq7-6W-JQ1"/>
+                <constraint firstAttribute="bottom" secondItem="COu-pU-lxC" secondAttribute="bottom" id="zDQ-kd-tcx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="IN3-tS-rGm"/>
+                    <exclude reference="INH-5h-yCb"/>
+                    <exclude reference="JnR-GJ-lhY"/>
+                    <exclude reference="YdV-mN-Zmh"/>
+                    <exclude reference="gHF-mL-bMo"/>
+                    <exclude reference="m96-hY-IvH"/>
+                    <exclude reference="mjY-nt-8hB"/>
+                    <exclude reference="mzr-0U-NRL"/>
+                    <exclude reference="n5A-WU-w2k"/>
+                    <exclude reference="oAv-6J-Rgn"/>
+                    <exclude reference="qLC-ci-hfd"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchImage-800-667h.png" width="375" height="667"/>
+    </resources>
+</document>

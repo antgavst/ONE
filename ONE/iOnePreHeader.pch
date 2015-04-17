@@ -1,0 +1,62 @@
+//
+//  iOnePreHeader.pch
+//  ONE
+//
+//  Created by 、雨凡 on 15/4/7.
+//  Copyright (c) 2015年 、雨凡. All rights reserved.
+//
+
+#ifndef ONE_iOnePreHeader_pch
+#define ONE_iOnePreHeader_pch
+
+#import <ShareSDK/ShareSDK.h>
+#import "WeiboApi.h"
+#import "WeiboSDK.h"
+
+#define CacheDir @"CacheDir"
+
+#import "UIImageView+AFNetworking.h"
+#import "DataManager.h"
+#import "UIImage+reSize.h"
+#import "UIViewController+CommonInit.h"
+#import "NSString+ToMonth.h"
+#import "UILabel+StringFrame.h"
+#import "AFNetworkReachabilityManager.h"
+
+#import "UMSocial.h"
+#import "UMSocialSinaHandler.h"
+#import "UMSocialSnsPlatformManager.h"
+
+
+
+#define ADURL @"http://bea.wufazhuce.com/OneForWeb/one/getWelcomeAdInfo?strMs=1"
+
+//欢迎页面
+#define welcomeURLString @"http://bea.wufazhuce.com/OneForWeb/one/getWelcomeAdInfo?strMs=1"
+// 以下的每条连接2015-03-24可以按照天变化，数据是最新的十天
+
+//首页
+#define homepageURLString @"http://bea.wufazhuce.com/OneForWeb/one/getHp_N?strDate=2015-03-24&strRow=1"
+//文章
+#define articleURLString @"http://bea.wufazhuce.com/OneForWeb/one/getC_N?strDate=2015-03-24&strRow=1&strMS=1"
+
+//问题
+#define QandAURLString @"http://bea.wufazhuce.com/OneForWeb/one/getQ_N?strDate=2015-03-24&strUi=&strRow=1"
+
+//东西
+#define goodsURLString @"http://bea.wufazhuce.com/OneForWeb/one/o_f?strDate=2015-03-24&strRow=1"
+
+
+/*
+ 关于
+ "strAd1280720url": "http://pic.yupoo.com/hanapp/EtrTKkxD/wP1Yx.png",
+ "strAd480320url": "http://pic.yupoo.com/hanapp/EtrTJI0D/e3V5k.png",
+ "strAd800480url": "http://pic.yupoo.com/hanapp/EtrTJOCR/OsXDL.png",
+ "strAd960540url": "http://pic.yupoo.com/hanapp/EtrTKRtz/tyMuI.png",
+ "strAdFutureurl": "http://pic.yupoo.com/hanapp/EtrTJI0D/e3V5k.png",
+ */
+#define screenWIDTH [UIScreen mainScreen].bounds.size.width
+#define screenHEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+#endif

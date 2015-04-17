@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Mine" rowHeight="44" id="KGk-i7-Jjw" customClass="MineCell">
+            <rect key="frame" x="0.0" y="1" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_leftArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="8tm-U9-iQ9">
+                        <rect key="frame" x="294" y="13" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="96P-Z0-vcR"/>
+                            <constraint firstAttribute="width" constant="18" id="m6n-u1-Bmo"/>
+                            <constraint firstAttribute="height" constant="28" id="nOc-RV-OS0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nOc-RV-OS0"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="欢迎加入" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtE-DS-Hp9">
+                        <rect key="frame" x="53" y="9" width="109" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="109" id="jbh-0R-ZdW"/>
+                            <constraint firstAttribute="height" constant="26" id="x2F-zK-Ubf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jbh-0R-ZdW"/>
+                                <exclude reference="x2F-zK-Ubf"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting.png" translatesAutoresizingMaskIntoConstraints="NO" id="IMm-Ym-o8i">
+                        <rect key="frame" x="17" y="8" width="28" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="XTg-Rc-qQG"/>
+                            <constraint firstAttribute="height" constant="27" id="vhH-Ga-nHi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="8tm-U9-iQ9" secondAttribute="centerY" id="2SM-dH-XYg"/>
+                    <constraint firstItem="DtE-DS-Hp9" firstAttribute="leading" secondItem="IMm-Ym-o8i" secondAttribute="trailing" constant="8" id="5o8-Uw-9um"/>
+                    <constraint firstItem="DtE-DS-Hp9" firstAttribute="leading" secondItem="IMm-Ym-o8i" secondAttribute="trailing" constant="8" id="BzK-3j-Sa9"/>
+                    <constraint firstItem="8tm-U9-iQ9" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="M8Z-MZ-xA3"/>
+                    <constraint firstItem="IMm-Ym-o8i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="Wn9-xu-rIG"/>
+                    <constraint firstAttribute="centerY" secondItem="IMm-Ym-o8i" secondAttribute="centerY" id="evj-3S-C3t"/>
+                    <constraint firstAttribute="centerY" secondItem="DtE-DS-Hp9" secondAttribute="centerY" id="hrr-4w-HCe"/>
+                    <constraint firstItem="DtE-DS-Hp9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="ioW-PI-e1t"/>
+                    <constraint firstItem="IMm-Ym-o8i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oMJ-Gj-52q"/>
+                    <constraint firstAttribute="centerY" secondItem="DtE-DS-Hp9" secondAttribute="centerY" id="wUz-1v-uVQ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="oMJ-Gj-52q"/>
+                        <exclude reference="BzK-3j-Sa9"/>
+                        <exclude reference="ioW-PI-e1t"/>
+                        <exclude reference="wUz-1v-uVQ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="img" destination="IMm-Ym-o8i" id="EnH-4z-vEK"/>
+                <outlet property="tittle" destination="DtE-DS-Hp9" id="cPB-NE-cr3"/>
+            </connections>
+            <point key="canvasLocation" x="309" y="453"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="main_leftArrow.png" width="18" height="28"/>
+        <image name="setting.png" width="27" height="26"/>
+    </resources>
+</document>
